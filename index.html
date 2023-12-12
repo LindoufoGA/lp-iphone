@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iphone | Apple</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Fira+Sans:wght@400;700&family=Hanken+Grotesk:wght@500;700;800&family=Merriweather:ital,wght@1,900&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Pacifico&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="bg">
+    <div class="header container">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo">
+      </div>
+      <nav class="menu-hamburguer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </nav>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#">iPhone 13</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">Mac</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container conteudo">
+    <div class="circulo"></div>
+    <div>
+      <div class="conteudo-item">
+        <div><img src="img/iphone13.png" alt=""></div>
+        <h2 class="titulo">Seu novo super poder</h2>
+        <p>Chip com velocidade impressionante. Um aumento notável na duração da bateria. E novos recursos de foto e vídeo.</p>
+        <p>No iPhone 13, você faz coisas que nunca pôde. E ele ainda vem em dois tamanhos.</p>
+        <div class="div"></div>
+        <span class="preco">A partir de R$ 6.599</span>
+
+        <h3>Escolha sua cor:</h3>
+        <div class="cores">
+          <span class="cor green" onclick="alterarCor('/img/green.png'); alterarCirculo('#384937')"></span>
+          <span class="cor bege" onclick="alterarCor('/img/pink.png'); alterarCirculo('#f8ddd6')"></span>
+          <span class="cor blue" onclick="alterarCor('/img/blue.png'); alterarCirculo('#225f7e')"></span>
+          <span class="cor black" onclick="alterarCor('/img/black.png'); alterarCirculo('#192028')"></span>
+          <span class="cor white" onclick="alterarCor('/img/white.png'); alterarCirculo('#f7f2ee')"></span>
+          <span class="cor red" onclick="alterarCor('/img/red.png');alterarCirculo('#ae0617')"></span>
+        </div>
+        <button>Comprar</button>
+
+      </div>
+    </div>
+
+    <div class="lista-imagens">
+      <img id='img' class="active" src="img/green.png" alt="">
+    </div>
+
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
